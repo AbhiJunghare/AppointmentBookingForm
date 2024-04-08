@@ -1,0 +1,15 @@
+﻿@model AppointmentForm.Models.AppointMentSlot
+
+<option value="">-- select slot --</option>
+
+@if (ViewBag.drpSlotTime != null)
+{
+    foreach (var item in ViewBag.drpSlotTime)
+    {
+        <option value="@item.slotid">
+            @item.slot
+
+    </option>
+}
+
+}
